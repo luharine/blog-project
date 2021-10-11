@@ -24,7 +24,7 @@ export default function Tbar() {
                    </div>
                    <div class = "right">
 
-                       <img className="top-img" src = ".//.//public\images\girl.jpg"/>
+                       <img className="top-img" src = ".//.//.//public\images\girl.jpg"/>
                        
                     </div>
                 
