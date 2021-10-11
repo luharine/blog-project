@@ -62,4 +62,5 @@ color: #444;
 .searchimg{
     font-size: 18px;
     color: grey;
+    cursor: pointer;
 }
