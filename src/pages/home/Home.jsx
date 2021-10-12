@@ -1,5 +1,6 @@
 import Header from "../../header/Header"
-import Tbar from "../../tbar/Tbar"
+import Posts from "../../posts/Posts"
+import Sbar from "../../sbar/Sbar"
 import "./home.css"
 
 
@@ -7,11 +8,16 @@ import "./home.css"
 
 export default function home() {
     return (
+      <>   
+        <Header />
+
         <div className="home">
-             <Tbar />
-            <Header />
+            
+           <Posts/>
+           <Sbar/>
             
             Homepage
         </div>
+        </>
     )
 }
