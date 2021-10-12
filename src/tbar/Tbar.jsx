@@ -26,10 +26,10 @@ export default function Tbar() {
 
                    </div>
                    <div class = "right">
-                   
-                       <img className="top-img" src = "/images/girl.jpg" alt="a beautiful girl"/>
-                        <i class="searchimg fas fa-search"></i>
-                       
+                       <div>
+                        <img className="top-img" src = "/images/girl.jpg" alt="a beautiful girl"/>
+                        <i class="searchicon fas fa-search"></i>
+                        </div>
                     </div>
                 
         </div>

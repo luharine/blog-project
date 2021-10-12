@@ -32,7 +32,7 @@ color: #444;
 .centre{
    display:inline-block; 
   flex:6;
-  style:none;
+  
 }
 .top-img{
     width:80px;
@@ -59,8 +59,8 @@ color: #444;
     font-size: 18px;
     font-weight: 300;
 }
-.searchimg{
-    font-size: 18px;
+.searchicon{
+    font-size: 24px;
     color: grey;
     cursor: pointer;
 }
