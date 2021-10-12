@@ -16,7 +16,7 @@ export default function home() {
            <Posts/>
            <Sbar/>
             
-            Homepage
+            
         </div>
         </>
     )
