@@ -6,6 +6,7 @@ import "./home.css"
 
 
 
+
 export default function home() {
     return (
       <>   
@@ -15,6 +16,7 @@ export default function home() {
             
            <Posts/>
            <Sbar/>
+          
             
             
         </div>
