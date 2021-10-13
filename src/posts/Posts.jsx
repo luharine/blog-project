@@ -13,7 +13,6 @@ export default function Posts() {
             <Post/>
             <Post/>
 
-
         </div>
     )
 }
