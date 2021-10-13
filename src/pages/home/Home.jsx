@@ -1,5 +1,5 @@
 import Header from "../../header/Header"
-import Posts from "../../posts/Posts"
+
 import Sbar from "../../sbar/Sbar"
 import "./home.css"
 
@@ -14,7 +14,7 @@ export default function home() {
 
         <div className="home">
             
-           <Posts/>
+           
            <Sbar/>
           
             
