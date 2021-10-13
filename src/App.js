@@ -4,7 +4,7 @@ import Write from "./pages/write/Write";
 
 function App() {
   return (
-    <Write/>
+    <Home/>
   );
 }
 
