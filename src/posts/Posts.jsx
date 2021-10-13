@@ -12,7 +12,10 @@ export default function Posts() {
             <Post/>
             <Post/>
             <Post/>
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
 
 
         </div>

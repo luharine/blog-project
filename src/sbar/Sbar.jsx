@@ -2,6 +2,8 @@ import "./sbar.css"
 
 export default function Sbar() {
     return (
+
+        
         <div class = "sbar">
             
                 <span class = "sbar-title">ABOUT ME</span>

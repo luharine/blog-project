@@ -5,7 +5,10 @@ import Tbar from "./tbar/Tbar";
 
 function App() {
   return (
+    <>
+    
     <Home/>
+    </>
   );
 }
 
