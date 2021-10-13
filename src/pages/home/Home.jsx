@@ -6,16 +6,6 @@ import "./home.css"
 
 export default function home() {
     return (
-<<<<<<< Updated upstream
-        <>
-        <Tbar/>
-        <Header />
-        <div className="home">
-         <> <Posts/> 
-          <Sbar/>
-          </>
-
-=======
         
     <>
     <Tbar/>
@@ -26,7 +16,6 @@ export default function home() {
         <div className="home">
           <Posts/>
           <Sbar/>
->>>>>>> Stashed changes
         </div>
         </>
      

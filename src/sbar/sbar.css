@@ -9,12 +9,9 @@
     display:flex;
     flex-direction: column;
     align-items: center;
-<<<<<<< Updated upstream
-    height:fit-content;
-=======
     flex:3;
+    height:fit-content;
 
->>>>>>> Stashed changes
 }
 .sbar-img{
     width:125px;
