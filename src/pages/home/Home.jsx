@@ -9,9 +9,10 @@ export default function home() {
         <>
         <Tbar/>
         <Header />
-        <Sbar/>
         <div className="home">
           <Posts/>
+          <Sbar/>
+
         </div>
       </>
     );
