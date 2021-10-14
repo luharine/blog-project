@@ -7,9 +7,9 @@ export default function Write() {
             <form className="writeForm">
                 <div className="writeFormGroup"> 
                     <label htmlFor="fileInput">
-                        <i class="writeIcon fas fa-plus"></i>
+                        <i class="writeIcon fas fa-plus"></i>{""}
                     </label>
-                    <input type="file" className="fileInput" style={{display:"none"}} />
+                    <input type="file" id="fileInput" style={{display:"none"}} />
                     <input type="text" className="writeInput" placeholder="Title" autoFocus={true} />
                 </div>
                 <div className="writeFormGroup">
