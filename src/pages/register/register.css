@@ -46,7 +46,7 @@
     border-radius: 10px;
 }
 
-.registerregister {
+.registerLOGIN {
     position: absolute;
     top: 60px;
     right: 55px;
@@ -65,4 +65,3 @@
       background-color:darkcyan;
       outline: none;
   }
-  

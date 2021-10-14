@@ -1,25 +1,22 @@
-<<<<<<< Updated upstream
-import "./login.css"
-=======
 import "./register.css"
 import React, { Component } from 'react'
->>>>>>> Stashed changes
 
 import ParticlesBg from 'particles-bg'
 
-export default function register() {
+export default function Register() {
     return (
        <> <div class = "register">
-           <span className="registertitle">register</span> 
+           <span className="registertitle">Register</span> 
             <form  className="registerform">
-
+              <label>Username</label>
+              <input class="registerinput" type="text" placeholder="Enter the Username"></input>
               <label>Email</label>
               <input class="registerinput" type="email" placeholder="Enter the Email id"></input>
               <label>Password</label>
-              <input class = "registerpassword" type="password" placeholder="Enter password"></input>
+              <input class = "registerpassword" type="password" placeholder="Enter the password"></input>
               <button class="registerbutton">register</button>
               </form>
-              <button class="registerregister">Register</button>
+              <button class="registerlogin">LOGIN</button>
            
             
         </div>
