@@ -1,5 +1,5 @@
 import "./register.css"
-import React, { Component } from 'react'
+
 
 import ParticlesBg from 'particles-bg'
 
