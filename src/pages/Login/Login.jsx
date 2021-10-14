@@ -1,5 +1,4 @@
 import "./login.css"
-import React, { Component } from 'react'
 
 import ParticlesBg from 'particles-bg'
 
@@ -19,7 +18,7 @@ export default function Login() {
            
             
         </div>
-        <ParticlesBg type="circle" bg={true} />
+        <ParticlesBg type="cobweb" bg={true} />
         </>
     )
 }
