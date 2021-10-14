@@ -36,9 +36,11 @@ export default function Tbar() {
 
                    </div>
                    <div class = "right">
-                       <div>
-                        <img className="top-img" src = "/images/girl.jpg" alt="a beautiful girl"/>
+                       <div> {user?( <img   className="top-img" src = "/images/girl.jpg" alt="a beautiful girl"/>):<><Link className="link top-center-list-item" to="/Login">Login</Link><Link className=" link top-center-list-item" to="/register">Register</Link></>}
+
+                       
                         <i class="searchicon fas fa-search"></i>
+
                         </div>
                     </div>
                 

@@ -4,6 +4,7 @@ import Setting from "./pages/setting/Setting";
 import Single from "./pages/single/Single";
 import Write from "./pages/write/Write";
 import Tbar from "./tbar/Tbar";
+import Login from "./pages/Login/Login"
 import {
   BrowserRouter as Router,
   Switch,
@@ -11,8 +12,8 @@ import {
   Link
 } from "react-router-dom";
 
-function App() {
-  const user=true;
+ function App() {
+  const user=false;
   return (
     <Router>
     
@@ -24,6 +25,9 @@ function App() {
       <Route path="/register">
         {user?<Home/>:<Register/>}
       </Route>
+      <Route path="/Login">
+        {user?<Home/>:<Login/>}
+        </Route>
       <Route path="/write">
       {user?<Write/>:<Register/>}
       </Route>
