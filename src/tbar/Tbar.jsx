@@ -1,6 +1,8 @@
+import { Link } from "react-router-dom"
 import "./tbar.css"
 
 export default function Tbar() {
+    const user=false;
     return (
         <div class = 'Tbar'>
                 
@@ -16,11 +18,19 @@ export default function Tbar() {
                    </div>
                    <div class="centre">
                                   <ul class="top-center-list" horizontal>
-                                       <li class = "top-center-list-item">HOME</li>
-                                       <li class = "top-center-list-item">ABOUT</li>
-                                       <li class = "top-center-list-item">CONTACT</li>
-                                       <li class = "top-center-list-item">INK</li>
-                                       <li class = "top-center-list-item">LOGOUT</li>  
+                                       <li class = "top-center-list-item">
+                                           <Link className="link" to="/">HOME</Link>
+                                       </li>
+                                       <li class = "top-center-list-item">
+                                        <Link className="link" to="/">ABOUT</Link>
+                                       </li>
+                                       <li class = "top-center-list-item">
+                                        <Link className="link" to="/">CONTACT</Link>
+                                       </li>
+                                       <li class = "top-center-list-item">
+                                        <Link className="link" to="/write">WRITE</Link>
+                                       </li>
+                                       <li class = "top-center-list-item">{user? "LOGOUT":""}</li>  
                                   </ul>  
 
 
