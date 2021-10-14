@@ -8,7 +8,6 @@ export default function home() {
     return (
         
     <>
-    <Tbar/>
       <Header />    
         
         
