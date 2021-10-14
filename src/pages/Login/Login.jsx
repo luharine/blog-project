@@ -1,9 +1,4 @@
-<<<<<<< Updated upstream
 import "./login.css"
-=======
-import "./register.css"
-import React, { Component } from 'react'
->>>>>>> Stashed changes
 
 import ParticlesBg from 'particles-bg'
 
