@@ -12,5 +12,5 @@ mongoose.connect(process.env.MONGO_URL).then(console.log("Connected to MongoDB")
 
 
 app.listen("5000",()=>{
-    console.log("Server isrunning");
+    console.log("Server is running");
 });
