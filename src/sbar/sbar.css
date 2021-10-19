@@ -4,7 +4,7 @@
   padding-left: 10px;
   padding-right: 10px;
   padding-bottom: 18px;
-  background-color: rgb(161, 162, 199);
+  background-color: rgb(197, 195, 195);
   border-radius: 10px;
   display: flex;
   flex-direction: column;
@@ -49,6 +49,7 @@
   width: 50%;
   margin-top: 15px;
   cursor: pointer;
+  
 }
 .sbar-social {
   margin-top: 15px;

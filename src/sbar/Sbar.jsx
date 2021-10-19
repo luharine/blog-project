@@ -1,6 +1,23 @@
+import axios from "axios";
+import { useState,useEffect} from "react"
 import "./sbar.css"
 
 export default function Sbar() {
+    const [cats,setCat]=useState([]);
+    
+    useEffect(() => {
+        
+        const getCats = async () => {
+
+            const res = await axios.get("/categories")
+            setCat(res.data)
+
+        }
+        getCats();
+
+    }, [])
+
+
     return (
 
         
@@ -17,12 +34,10 @@ export default function Sbar() {
                <div class = "sbar-item">
                    <span class = "sbar-title">CATEGORIES</span>
                    <ul class= "sbar-list">
-                       <li class="sbar-list-item">LIFE</li>
-                       <li class="sbar-list-item">MUSIC</li>
-                       <li class="sbar-list-item">ART</li>
-                       <li class="sbar-list-item">SPORTS</li>
-                       <li class="sbar-list-item">CINEMA</li>
-                       <li class="sbar-list-item">TECH</li>
+                       {cats.map((c)=>
+                        
+
+                      ( <li class="sbar-list-item">{c.name}</li>))}
                    </ul>
                    </div>
 
