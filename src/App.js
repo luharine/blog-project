@@ -8,8 +8,7 @@ import Login from "./pages/Login/Login"
 import {
   BrowserRouter as Router,
   Switch,
-  Route,
-  Link
+  Route
 } from "react-router-dom";
 
  function App() {
@@ -24,6 +23,9 @@ import {
       </Route>
       <Route path="/register">
         {user?<Home/>:<Register/>}
+      </Route>
+      <Route path="/posts">
+          <Home/>
       </Route>
       <Route path="/Login">
         {user?<Home/>:<Login/>}
