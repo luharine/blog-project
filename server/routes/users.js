@@ -41,7 +41,7 @@ router.delete("/:id",async(req,res)=>{
         try {
             const user = await User.findById(req.params.id);
     try{ 
-        await Post.deleteMany({username:User.username});
+        await Post.deleteMany({username:user.username});
        await User.findByIdAndDelete(req.params.id)
 
         res.status(200).json("User Deleted");
