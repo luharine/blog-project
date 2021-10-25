@@ -4,9 +4,9 @@ import Header from "../../header/Header"
 import Posts from "../../posts/Posts";
 import Sbar from "../../sbar/Sbar";
 import "./home.css"
-import {useState} from "react";
-import axios from "axios";
-import { useEffect } from "react";
+
+
+
 
 export default function Home() {
   const [posts,setposts]=useState([]);

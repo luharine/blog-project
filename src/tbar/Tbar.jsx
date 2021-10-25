@@ -1,8 +1,14 @@
 import { Link } from "react-router-dom"
 import "./tbar.css"
+import { Context } from "../context/Context";
+import { useContext } from "react";
 
 export default function Tbar() {
-    const user=false;
+    const { user, dispatch } = useContext(Context);
+    const handleLogout =  () =>{
+    dispatch ({type:"LOGOUT"});
+    };
+    
     return (
         <div class = 'Tbar'>
                 
@@ -30,13 +36,15 @@ export default function Tbar() {
                                        <li class = "top-center-list-item">
                                         <Link className="link" to="/write">WRITE</Link>
                                        </li>
-                                       <li class = "top-center-list-item">{user? "LOGOUT":""}</li>  
+                                       <li class = "top-center-list-item" onClick={handleLogout}>{user? "LOGOUT":""}</li>  
                                   </ul>  
 
 
                    </div>
                    <div class = "right">
-                       <div> {user?( <img   className="top-img" src = "/images/girl.jpg" alt="a beautiful girl"/>):<><Link className="link top-center-list-item" to="/Login">Login</Link><Link className=" link top-center-list-item" to="/register">Register</Link></>}
+                       <div> {user?( <img   className="top-img"  src = {user.profilePic} alt="a beautiful girl"/>):<>
+                       <Link className="link top-center-list-item" to="/Login">Login</Link>
+                       <Link className=" link top-center-list-item" to="/register">Register</Link></>}
 
                        
                         <i class="searchicon fas fa-search"></i>

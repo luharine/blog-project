@@ -5,14 +5,19 @@ import Single from "./pages/single/Single";
 import Write from "./pages/write/Write";
 import Tbar from "./tbar/Tbar";
 import Login from "./pages/Login/Login"
+import { useContext } from "react";
+import { Context } from "./context/Context";
 import {
   BrowserRouter as Router,
   Switch,
   Route
 } from "react-router-dom";
 
+
  function App() {
-  const user=false;
+  
+  const { user } = useContext(Context);
+ 
   return (
     <Router>
     
