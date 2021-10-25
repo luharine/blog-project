@@ -20,7 +20,7 @@ export default function Write() {
             const data = new FormData();
             const filename = Date.now() + file.name;
             data.append("name",filename);
-            data.append("name",file);
+            data.append("file",file);
             newpost.photo = filename;
         try{
             await axios.post("/upload",data);

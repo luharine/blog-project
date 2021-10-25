@@ -12,7 +12,6 @@ export default function Tbar() {
     return (
         <div class = 'Tbar'>
                 
-               
                    <div class="left">
                        <div class="top-icons">
                                      <i class="top-icon fab fa-discord"></i>
