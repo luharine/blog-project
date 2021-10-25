@@ -16,8 +16,9 @@ const app= express();
 dotenv.config();
 app.use(express.json());
 app.use("/images",express.static(path.join(__dirname,"/images")));
+const connection = "mongodb+srv://admin:admin@cluster0.johqm.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
 
-mongoose.connect('mongodb+srv://admin:admin@cluster0.johqm.mongodb.net/myFirstDatabase?retryWrites=true&w=majority', {
+mongoose.connect(connection, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
     
