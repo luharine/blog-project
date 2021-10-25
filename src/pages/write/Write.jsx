@@ -17,7 +17,7 @@ export default function Write() {
             desc
         }
         if(file){
-            const data = FormData();
+            const data = new FormData();
             const filename = Date.now() + file.name;
             data.append("name",filename);
             data.append("name",file);
@@ -25,28 +25,36 @@ export default function Write() {
         try{
             await axios.post("/upload",data);
         }
-        catch{err}
-
-
+        catch(err){     
+            console.log(err);
         }
-        axios.post("./posts")
+        }
+        try{
+            const res=await axios.post("./posts",newpost);
+            window.location.replace("/post/+"+res.data._id);
+
+        }catch(err){
+            console.log(err);
+        }
 
     }
 
 
     return (
         <div className="write" >
-            <img className="writeImg" src="/images/81FqFFFzdGL.jpg" alt=""/>
+            {file &&(
+                <img className="writeImg" src={URL.createObjectURL(file)} alt=""/>
+            )}
             <form className="writeForm" onSubmit = {handleSubmit}>
                 <div className="writeFormGroup"> 
                     <label htmlFor="fileInput">
                         <i class="writeIcon fas fa-plus"></i>{""}
                     </label>
-                    <input type="file" id="fileInput" style={{display:"none"}} />
-                    <input type="text" className="writeInput" placeholder="Title" autoFocus={true} />
+                    <input type="file" id="fileInput" style={{display:"none"}} onChange={e=>setFile(e.target.files[0])} />
+                    <input type="text" className="writeInput" placeholder="Title" autoFocus={true} onChange={e=>setTitle(e.target.value)} />
                 </div>
                 <div className="writeFormGroup">
-                    <textarea placeholder="Write your story..." type="text" className="writeInput writeText"></textarea>
+                    <textarea placeholder="Write your story..." type="text" className="writeInput writeText" onChange={e=>setDesc(e.target.value)}></textarea>
                 </div>
                 <button className="writeSubmit" type = "submit">Publish</button>
 
