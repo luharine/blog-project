@@ -12,7 +12,6 @@ const categoryRoute = require("./routes/categories");
 
 
 const app= express();
-const port = process.env.PORT || 5000;
 
 dotenv.config();
 app.use(express.json());
@@ -46,6 +45,6 @@ app.use("/routes/users",usersRoute);
 app.use("/routes/posts",postRoute)
 app.use("/routes/categories",categoryRoute);
 
-app.listen(port,()=>{
+app.listen("5000",()=>{
     console.log("Server is running");
 });
